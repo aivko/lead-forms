@@ -1,0 +1,16 @@
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+@mixin autofill($background, $color, $border, $size) {
+  &:-webkit-autofill {
+    font-size: $size + px;
+    border: 1px solid $border;
+    -webkit-text-fill-color: $color;
+    -webkit-box-shadow: 0 0 0 1000px $background inset;
+    transition: background-color 50s ease-in-out 0s;
+  }
+}

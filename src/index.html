@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Lead form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+    <form action="" class="form form--register js-register-form" id="register-form">
+        <section class="section section--personal">
+            <h2 class="section__title">Personal information</h2>
+            <div class="section__layout">
+                <div class="form__items">
+                    <div class="form__item">
+                        <label for="firstName" class="form__label">First Name:</label>
+                        <input name="firstName" id="firstName" type="text" autocomplete="given-name"  class="form__input" placeholder="First Name*" />
+                        <p data-field="firstName" class="form__error-field"></p>
+                    </div>
+                    <div class="form__item">
+                        <label for="lastName" class="form__label">Last Name:</label>
+                        <input name="lastName" id="lastName" type="text" autocomplete="family-name" class="form__input" placeholder="Last Name*" />
+                        <p data-field="lastName" class="form__error-field"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--contact">
+            <h2 class="section__title">Contact information</h2>
+            <div class="section__layout">
+                <div class="form__items">
+                    <div class="form__item">
+                        <label for="email" class="form__label">Email:</label>
+                        <input name="email" id="email" type="text" autocomplete="email" class="form__input" placeholder="Email" />
+                        <p data-field="email" class="form__error-field"></p>
+                    </div>
+                    <div class="form__item">
+                        <label for="phoneNumber" class="form__label">Phone numbers:</label>
+                        <input name="phoneNumber" id="phoneNumber" type="text" autocomplete="tel" class="form__input" placeholder="Phone numbers*" />
+                        <p data-field="phoneNumber" class="form__error-field"></p>
+                    </div>
+                    <div class="form__item">
+                        <label for="country" class="form__label">Country</label>
+                        <select name="country" id="country" class="form__select">
+                            <option value="">Empty</option>
+                        </select>
+                        <p data-field="country" class="form__error-field"></p>
+                    </div>
+                    <div class="form__item">
+                        <label for="address" class="form__label">Address:</label>
+                        <input name="address" id="address" type="text" autocomplete="street-address" class="form__input" placeholder="Address*" />
+                        <p data-field="address" class="form__error-field"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--payments">
+            <h2 class="section__title">Payment details</h2>
+            <div class="section__layout">
+                <div class="form__items">
+                    <div class="form__item">
+                        <label for="cc" class="form__label">Credit card:</label>
+                        <input name="cc" id="cc" type="text" autocomplete="cc-number" class="form__input" placeholder="Credit card*" />
+                        <p data-field="cc" class="form__error-field"></p>
+                    </div>
+                    <div class="form__item">
+                        <label for="cvv" class="form__label">CVV2:</label>
+                        <input name="cvv" id="cvv" type="text" autocomplete="cc-csc" class="form__input" placeholder="CVV2*" maxlength="3" minlength="3" />
+                        <p data-field="cvv" class="form__error-field"></p>
+                    </div>
+                    <div class="form__item form__item--checkbox">
+                        <input id="checkbox" class="form__checkbox" type="checkbox" autocomplete="off" />
+                        <label for="checkbox" class="form__checkbox-label">By clicking Submit you agree with terms of use</label>
+                        <p data-field="checkbox" class="form__error-field"></p>
+                    </div>
+                    <div class="form__item">
+                        <button class="button" id="submit-button" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+</div>
+</body>
+</html>

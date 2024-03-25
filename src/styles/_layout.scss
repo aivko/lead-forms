@@ -1,0 +1,28 @@
+.section--personal {
+  background-color: #fedbd0;
+}
+
+.section--contact {
+  background-color: #442c2e;
+}
+
+.section--payments {
+  background-color: #feeae6;
+}
+
+.section__layout {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__title {
+  position: sticky;
+  top: 0;
+  background-color: #442c2e;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1;
+}
