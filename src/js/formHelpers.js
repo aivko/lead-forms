@@ -112,7 +112,7 @@ export const initFormValidation = ({ schema, formId }) => {
     });
 }
 
-export const handleChangeFormField = ({field, type}) => {
+export const handleFormEventListeners = ({field, type}) => {
     const element = document.getElementById(field);
     element.addEventListener(type, () => {
         checkFieldIsValid(field)

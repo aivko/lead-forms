@@ -1,5 +1,5 @@
 import { initSelect } from '@/js/initSelect';
-import { initFormValidation, handleChangeFormField } from '@/js/formHelpers';
+import { initFormValidation, handleFormEventListeners } from '@/js/formHelpers';
 import { formSchema } from '@/js/constants';
 import {
     cvvMask,
@@ -24,18 +24,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const fields = formSchema.fields
         for (let key in fields) {
             const type = (key !== 'checkbox' && key !== 'country') ? "keyup" : "change";
-            handleChangeFormField({
+            handleFormEventListeners({
                 field: key,
                 type: type,
             });
-
         }
     } catch (error) {
         console.log(error)
     }
-
-
-
 });
 
 initFormValidation({
