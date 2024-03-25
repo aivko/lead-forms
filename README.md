@@ -1,1 +1,4 @@
-# lead-forms
+ ```bash
+   npm install
+   npm run start
+   ```
